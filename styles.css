@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    /* para que el espaciado interno y externo sumen un solo espaciado */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-color: #04b5c0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%234d14a8' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* NAVIGATION */
+.nav-main {
+    font-size: 50px;
+    display: flex;
+    /* esto organiza los elementos uno alado del otro */
+    justify-content: space-between;
+    /* esto hara q utilice todo el ancho disponible */
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+/* LOGO  */
+.nav-brand {
+    width: 50px;
+}
+
+/* Nav left */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    /* esto hace que en el flex se pegue todo hacia la izquierda */
+    margin-left: 20px;
+}
+
+/* showcase */
+
+hr {
+    margin: 10px 0;
+}
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url(/img/showcase2.jpg) no-repeat center center/cover;
+    /* la imagen sale en una esquina pero queremos que este centrado y salga toda la imagen asi q poneos */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    /* flex direction column para poner el elemento al medio y centrado */
+    align-items: center;
+    justify-content: flex-end;
+    /* esto ultimo justifico el contenido en la parte de abajo del flex */
+
+
+}
+
+.btn {
+    cursor: pointer;
+    /* para q aparezca el dedo para apretar boton */
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1pxsolid white;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: opacity 0.5s;
+
+}
+
+.btn:hover {
+    opacity: .6;
+}
+
+.showcase h2, .showcase p {
+    margin-bottom: 10px;
+}
